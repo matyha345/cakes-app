@@ -1,4 +1,3 @@
-
 import EmailSocial from '../../ui/social/email/EmailSocial'
 import InstagramSocial from '../../ui/social/instagram/InstagramSocial'
 import PhoneCallSocial from '../../ui/social/phone-call/PhoneCallSocial'
@@ -26,7 +25,7 @@ const Footer = () => {
 							</li>
 
 							<li>
-								<TelegramSocial/>
+								<TelegramSocial />
 							</li>
 
 							<li>

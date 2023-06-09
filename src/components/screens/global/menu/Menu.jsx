@@ -25,7 +25,12 @@ const Menu = () => {
 						data-aos-duration='900'
 						className={styles.right}
 					>
-						<img width={650} height={500} src='/public/menuPhoto.jpeg' alt='photoMenu' />
+						<img
+							width={650}
+							height={500}
+							src='/public/menuPhoto.jpeg'
+							alt='photoMenu'
+						/>
 					</div>
 				</div>
 			</section>

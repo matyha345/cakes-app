@@ -5,9 +5,7 @@ import OurCard from './our_card/OurCard'
 import BackLink from '../../../../ui/back-link/BackLink'
 import Heading from '../../../../layout/header/Heading'
 
-
 const OurProducts = () => {
-
 	return (
 		<>
 			<Heading />

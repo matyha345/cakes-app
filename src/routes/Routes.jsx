@@ -1,14 +1,13 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NotFound from '../components/screens/not-found/NotFound'
 import { routes } from './routes.data'
 import ScrollToTop from '../utils/scrollToTop'
 
-
 const Router = () => {
 	return (
-		<BrowserRouter> 
+		<BrowserRouter>
 			<ScrollToTop />
-			<Routes >
+			<Routes>
 				{routes.map(hyperborea => {
 					return (
 						<Route

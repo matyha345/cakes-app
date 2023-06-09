@@ -8,14 +8,13 @@
 	background-color: $bgFour;
 
 	.container {
-
 		.blog {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			margin-bottom: 50px;
 
-			@include media('<=tablet'){
+			@include media('<=tablet') {
 				flex-direction: column;
 				padding: 0 10px;
 			}
@@ -27,9 +26,8 @@
 			.imageOne {
 				position: relative;
 
-				@include media('<=tablet'){
+				@include media('<=tablet') {
 					margin-bottom: 30px;
-
 				}
 				&::before {
 					content: '';
@@ -55,12 +53,12 @@
 			.imageTwo {
 				position: relative;
 
-				@include media('<=tablet'){
+				@include media('<=tablet') {
 					margin-bottom: 30px;
 				}
 
 				&::before {
-					content: "";
+					content: '';
 					position: absolute;
 					top: -21px;
 					right: 0px;
@@ -77,7 +75,6 @@
 					border-radius: 130px;
 
 					border: 1px solid $white;
-
 				}
 			}
 
@@ -89,7 +86,7 @@
 				font-size: $fondSizeText;
 				max-width: 290px;
 
-				@include media('<=tablet'){
+				@include media('<=tablet') {
 					margin-left: 0;
 					padding: 0 10px;
 				}
