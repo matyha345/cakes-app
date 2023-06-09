@@ -8,7 +8,7 @@ const WhatsAppSocial = () => {
 				href='https://wa.me/79673503435'
 				target='_blank'
 			>
-				<img width='40' height='40' src='public/svg/footer/whatsapp.svg' />
+				<img width='40' height='40' src='/svg/footer/whatsapp.svg' />
 				WhatsApp
 			</a>
 		</>

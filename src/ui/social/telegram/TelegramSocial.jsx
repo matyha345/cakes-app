@@ -8,7 +8,7 @@ const TelegramSocial = () => {
 				href='https://telegram.im/@irene_arrow'
 				target='_blank'
 			>
-				<img width='40' height='40' src='public/svg/footer/telegram.svg' />
+				<img width='40' height='40' src='/svg/footer/telegram.svg' />
 				telegram/irene_arrow
 			</a>
 		</>

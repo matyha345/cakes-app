@@ -14,7 +14,7 @@ const Home = () => {
 							<img
 								width={440}
 								height={700}
-								src='public/home.jpeg'
+								src='/home.jpeg'
 								alt='photo'
 							/>
 						</div>
