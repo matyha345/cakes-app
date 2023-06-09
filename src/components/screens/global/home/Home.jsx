@@ -1,4 +1,4 @@
-import Heading from '../../../../layout/header/heading'
+import Heading from '../../../../layout/header/Heading'
 import Button from '../../../../ui/button/Button'
 
 import styles from './Home.module.scss'
@@ -14,7 +14,7 @@ const Home = () => {
 							<img
 								width={440}
 								height={700}
-								src='/public/home.jpeg'
+								src='public/home.jpeg'
 								alt='photo'
 							/>
 						</div>

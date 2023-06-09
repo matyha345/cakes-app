@@ -28,7 +28,7 @@ const Menu = () => {
 						<img
 							width={650}
 							height={500}
-							src='/public/menuPhoto.jpeg'
+							src='public/menuPhoto.jpeg'
 							alt='photoMenu'
 						/>
 					</div>

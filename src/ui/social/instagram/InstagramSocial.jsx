@@ -8,7 +8,7 @@ const InstagramSocial = () => {
 				href='https://www.instagram.com/penguin_family_cakes/'
 				target='_blank'
 			>
-				<img width='40' height='40' src='/public/svg/footer/instagram.svg' />
+				<img width='40' height='40' src='public/svg/footer/instagram.svg' />
 				instagram
 			</a>
 		</>
