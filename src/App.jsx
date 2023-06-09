@@ -13,7 +13,7 @@ function App() {
 			<Home />
 			<Philosophy />
 			<Menu />
-			<ProjectsCars/>
+			<ProjectsCars />
 			<Contact />
 			<Footer />
 		</>

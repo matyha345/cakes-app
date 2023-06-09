@@ -3,12 +3,12 @@ import Footer from '../../../../layout/footer/Footer'
 import styles from './OurProducts.module.scss'
 import OurCard from './our_card/OurCard'
 import BackLink from '../../../../ui/back-link/BackLink'
-
+import Heading from '../../../../layout/header/Heading'
 
 const OurProducts = () => {
-
 	return (
 		<>
+			<Heading />
 			<section className={styles.wrapper}>
 				<BackLink />
 				<div className={styles.container}>

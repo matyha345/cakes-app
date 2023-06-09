@@ -2,8 +2,10 @@ import styles from './ProductGeneration.module.scss'
 
 import { useParams } from 'react-router-dom'
 import { projectsOur } from '../../helpers/our_projects/OurProjectsList'
+
 import Footer from '../../../layout/footer/Footer'
 import BackLink from '../../../ui/back-link/BackLink'
+import Heading from '../../../layout/header/Heading'
 
 const ProductGeneration = () => {
 	const { id } = useParams()
@@ -11,6 +13,7 @@ const ProductGeneration = () => {
 
 	return (
 		<>
+			<Heading />
 			<section className={styles.wrapper}>
 				<BackLink path='/products' component='OurProducts' />
 				<div className={styles.container}>

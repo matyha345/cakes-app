@@ -10,8 +10,8 @@ const ContactInner = () => {
 						data-aos-anchor-placement='top-bottom'
 						data-aos-duration='900'
 						className={styles.imageOne}
-					>	
-						<img src='/public/contact_one.jpeg' alt='one' />
+					>
+						<img src='/contact_one.jpeg' alt='one' />
 					</div>
 					<div className={styles.content}>
 						<h2>Тестовая кухня"</h2>
@@ -29,7 +29,7 @@ const ContactInner = () => {
 						data-aos-duration='900'
 						className={styles.imageTwo}
 					>
-						<img src='/public/contact_two.jpeg' alt='one' />
+						<img src='/contact_two.jpeg' alt='one' />
 					</div>
 					<div className={styles.content}>
 						<h2>Продуктов питания</h2>

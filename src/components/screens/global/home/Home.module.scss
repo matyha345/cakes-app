@@ -99,13 +99,13 @@
 				margin-top: 20px;
 				justify-content: center;
 			}
-			
+
 			p {
 				font-size: $fondSizeH1;
 				margin-bottom: 50px;
 				font-weight: 500;
 
-				@include media('<=tablet'){
+				@include media('<=tablet') {
 					text-align: center;
 
 					@include media('>=phone', '<=500px') {

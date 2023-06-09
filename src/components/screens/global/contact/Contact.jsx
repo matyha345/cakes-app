@@ -15,7 +15,7 @@ const Contact = () => {
 							data-aos-duration='600'
 							className={styles.images}
 						>
-							<img src='/public/w.jpeg' alt='avatar' />
+							<img src='/w.jpeg' alt='avatar' />
 						</div>
 						<div className={styles.content}>
 							<h2>Познакомьтесь с нами!</h2>

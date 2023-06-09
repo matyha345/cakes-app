@@ -18,17 +18,17 @@
 
 			@include media('<=tablet') {
 				flex-direction: column;
-                align-items: center;
-                height: 100%;
+				align-items: center;
+				height: 100%;
 			}
 
 			.left {
 				div {
 					img {
 						@include media('<=tablet') {
-                            width: 100px;
-                            height: 100px;
-                            margin-bottom: 30px;
+							width: 100px;
+							height: 100px;
+							margin-bottom: 30px;
 
 							@include media('<=phone') {
 								display: none;
@@ -45,19 +45,19 @@
 				justify-content: space-between;
 				margin-right: 50px;
 
-                @include media('<=tablet'){
-                    align-items: center;
-                    margin-right: 0;
-                }
+				@include media('<=tablet') {
+					align-items: center;
+					margin-right: 0;
+				}
 				h1 {
 					font-size: $fondSizeH1;
 					font-weight: 800;
 					color: $white;
 
-                    @include media('<=tablet'){
-                        font-size: 22px;
-                        margin-bottom: 30px;
-                    }
+					@include media('<=tablet') {
+						font-size: 22px;
+						margin-bottom: 30px;
+					}
 				}
 
 				ul {
