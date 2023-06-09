@@ -1,0 +1,30 @@
+@import '/src/assets/variables';
+@import '/src/assets/animations';
+@import '/src/assets/index';
+
+.wrapper {
+	background-color: $white;
+	padding: 100px 0;
+
+	button{
+		
+	}
+
+	.container {
+		.title {
+			font-size: $fondSizeH1;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		.content {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			column-gap: 30px;
+			row-gap: 30px;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+@import '/src/assets/variables';
+@import '/src/assets/animations';
+@import '/src/assets/index';
+
+button {
+	position: relative;
+
+	top: 75px;
+	left: 180px;
+
+	transition: all 0.3s ease-in-out;
+
+	@include media('<=tablet') {
+		top: -30px !important;
+		left: 30px !important;
+	}
+
+	&:active {
+		position: relative;
+		top: 70px;
+		left: 180px;
+
+		@include media('<=tablet') {
+			top: -32px;
+			left: 40px;
+		}
+	}
+
+	&:hover {
+		transform: scale(1.08);
+	}
+
+	&:hover path {
+		fill: $bgOne;
+	}
+}

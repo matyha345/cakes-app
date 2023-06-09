@@ -1,0 +1,18 @@
+@import 'src/assets/variables.scss';
+
+.social {
+	display: flex;
+	align-items: center;
+	transition: all 0.3s;
+	img {
+		margin-right: 10px;
+		width: 30px;
+		height: 30px;
+	}
+
+	&:hover {
+		opacity: 0.9;
+		color: $bgFour;
+		transform: scale(1.2);
+	}
+}

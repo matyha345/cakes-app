@@ -1,0 +1,85 @@
+@import 'src/assets/variables.scss';
+@import 'src/assets/animations.scss';
+@import 'src/assets/index.scss';
+@import 'include-media';
+
+.wrapper {
+	padding: 100px 0;
+	background-color: $bgFour;
+	border-bottom: 1px solid $white;
+
+	.container {
+		h1 {
+			font-size: 30px;
+			text-align: center;
+			color: $accent;
+		}
+
+		.blog {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 50px;
+
+			@include media('<=tablet') {
+				flex-direction: column;
+			}
+
+			.images {
+				position: relative;
+
+				@include media('<=tablet') {
+					margin-bottom: 30px;
+					padding: 0 30px;
+				}
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: -30px;
+					right: 0;
+					background: url('/public/svg/smail.svg') no-repeat;
+					width: 126px;
+					height: 126px;
+					z-index: 10;
+					transform: rotate(341deg);
+				}
+
+				img {
+					width: 420px;
+					height: 420px;
+					box-shadow: $box-shadow;
+					border-radius: 150px;
+					border: 1px solid $white;
+					filter: brightness(1.1);
+
+					@include media('>=phone', '<=370px') {
+						height: 300px;
+					}
+				}
+			}
+
+			.content {
+				display: flex;
+				flex-direction: column;
+				margin-left: 80px;
+				max-width: 290px;
+				font-size: $fondSizeText;
+				color: $white;
+				@include media('<=phone') {
+					text-align: center;
+					padding: 0 10px;
+					margin-left: 0;
+				}
+
+				h2 {
+					margin-bottom: 30px;
+				}
+
+				p {
+					color: $accent;
+				}
+			}
+		}
+	}
+}

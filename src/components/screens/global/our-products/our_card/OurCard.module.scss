@@ -1,0 +1,40 @@
+@import '/src/assets/variables';
+@import '/src/assets/animations';
+@import '/src/assets/index';
+
+.cards {
+	display: flex;
+	flex-direction: column;
+
+	.cards_link {
+
+		.link {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			transition: all 0.3s ease-in-out;
+
+
+			&:hover {
+				opacity: 0.8;
+				transform: scale(1.03);
+			}
+
+			img {
+				max-width: 100%;
+				border-radius: 100px;
+				box-shadow: $box-shadow;
+				border: 1px solid $white;
+                margin-bottom: 20px;
+			}
+
+			h2 {
+				font-size: $fondSizeText;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+
+

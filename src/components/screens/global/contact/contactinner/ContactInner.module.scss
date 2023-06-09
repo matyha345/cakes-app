@@ -1,0 +1,110 @@
+@import 'src/assets/variables.scss';
+@import 'src/assets/animations.scss';
+@import 'src/assets/index.scss';
+@import 'include-media';
+
+.wrapper {
+	padding: 50px 0;
+	background-color: $bgFour;
+
+	.container {
+
+		.blog {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 50px;
+
+			@include media('<=tablet'){
+				flex-direction: column;
+				padding: 0 10px;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.imageOne {
+				position: relative;
+
+				@include media('<=tablet'){
+					margin-bottom: 30px;
+
+				}
+				&::before {
+					content: '';
+					position: absolute;
+					top: -30px;
+					left: 0;
+					background: url('/public/svg/like.svg') no-repeat;
+					width: 83px;
+					height: 83px;
+					transform: rotate(338deg);
+				}
+
+				img {
+					width: 420px;
+					height: 250px;
+
+					border-radius: 130px;
+					box-shadow: $box-shadow;
+					border: 1px solid $white;
+				}
+			}
+
+			.imageTwo {
+				position: relative;
+
+				@include media('<=tablet'){
+					margin-bottom: 30px;
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					top: -21px;
+					right: 0px;
+					background: url(/public/svg/heart_about.svg) no-repeat;
+					width: 83px;
+					height: 83px;
+					transform: rotate(48deg);
+				}
+
+				img {
+					width: 420px;
+					height: 250px;
+
+					border-radius: 130px;
+
+					border: 1px solid $white;
+
+				}
+			}
+
+			.content {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				margin-left: 80px;
+				font-size: $fondSizeText;
+				max-width: 290px;
+
+				@include media('<=tablet'){
+					margin-left: 0;
+					padding: 0 10px;
+				}
+
+				h2 {
+					color: $white;
+
+					margin-bottom: 30px;
+				}
+
+				p {
+					font-size: $fondSizeText;
+					color: $accent;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,118 @@
+@import 'src/assets/animations.scss';
+@import 'src/assets/variables.scss';
+@import 'src/assets/index.scss';
+@import 'include-media';
+
+.wrapper {
+	display: flex;
+	height: 100%;
+	background-color: $bgFour;
+
+	.home__item {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include media('<=desktop') {
+			flex-direction: column;
+		}
+
+		.home__left {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			height: 90vh;
+
+			margin-left: 50px;
+
+			@include media('<=tablet') {
+				margin-left: 0;
+
+				@include media('>=phone', '<=500px') {
+					justify-content: center;
+					height: 55vh;
+					padding: 0 30px;
+				}
+			}
+
+			&::before {
+				position: absolute;
+				display: block;
+				content: '';
+				top: 18px;
+				left: -86px;
+				width: 154px;
+				height: 158px;
+				background: url('/public/svg/logo.svg') no-repeat;
+
+				@include media('<=tablet') {
+					left: -31px;
+
+					@include media('>=phone', '<=600px') {
+						top: -35px;
+						left: 0px;
+
+						@include media('>=phone', '<=400px') {
+							top: -2px;
+							left: 150px;
+						}
+					}
+				}
+			}
+
+			&::after {
+				position: absolute;
+				display: block;
+				content: '';
+				top: 500px;
+				left: 374px;
+				width: 150px;
+				height: 150px;
+				background: url('/public/svg/smail.svg') no-repeat;
+				animation: rotate 10s infinite;
+
+				@include media('<=tablet') {
+					display: none;
+				}
+			}
+
+			img {
+				border-radius: 30px 194px 30px 194px;
+				border: 1px solid $white;
+				box-shadow: $box-shadow;
+
+				@include media('>=phone', '<=500px') {
+					border-radius: 100px 15px 100px 15px;
+				}
+			}
+		}
+
+		.text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 500px;
+
+			@include media('>=phone', '<=500px') {
+				margin-top: 20px;
+				justify-content: center;
+			}
+			
+			p {
+				font-size: $fondSizeH1;
+				margin-bottom: 50px;
+				font-weight: 500;
+
+				@include media('<=tablet'){
+					text-align: center;
+
+					@include media('>=phone', '<=500px') {
+						font-size: 17px;
+					}
+				}
+			}
+		}
+	}
+}
