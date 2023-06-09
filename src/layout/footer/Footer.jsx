@@ -12,7 +12,7 @@ const Footer = () => {
 				<div className={styles.content}>
 					<div className={styles.left}>
 						<div>
-							<img src='/public/svg/logo_footer.svg' alt='logo' />
+							<img src='/svg/logo_footer.svg' alt='logo' />
 						</div>
 					</div>
 
